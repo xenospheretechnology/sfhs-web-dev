@@ -97,7 +97,7 @@ async function fetchRecentApplications(userId) {
                     <p>Email: ${application.email}</p>
                     <p>Job Applied For: ${application.jobTitle}</p>
                     <p>Application Date: ${application.timeCreated.toDate().toLocaleDateString()}</p>
-                    <button onclick="viewApplicationDetails('${doc.id}')">View Application</button>
+                    
                 `;
                 recentApplication.appendChild(applicationCard);
             });
