@@ -59,4 +59,3 @@ document.querySelector('form').addEventListener('submit', (event) => {
       alert(errorMessage);  // Show error message
     });
 });
- 
