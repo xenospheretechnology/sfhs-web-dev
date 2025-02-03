@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Applications</title>
+  <link rel="stylesheet" href="css/myApplications.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Welcome, <br><strong>Student</strong></h2>
+    <button onclick="window.location.href='studentPortal.html'">Home</button>
+    <button onclick="window.location.href='apply.html'">Apply</button>
+    <button onclick="window.location.href='viewJobs.html'">View Job Listings</button>
+    <button onclick="window.location.href='myApplications.html'">My Applications</button>
+    <button onclick="window.location.href='interestedJobs.html'">Interested Jobs</button>
+    <button onclick="window.location.href='signIn.html'">Log out</button>
+</div>
+  
+  <div class="content">
+    <div class="my-applications">
+      <h2>My Applications</h2>
+      <div id="myApplications">
+        <p>Loading applications...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Firebase libraries -->
+  <script type="module" src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js"></script>
+  <!-- My Applications Script -->
+  <script type="module" src="js/myApplications.js"></script>
+</body>
+</html>

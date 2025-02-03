@@ -1,0 +1,139 @@
+/* General Body Styles */
+body {
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    background-color: #f0f4f8; /* Updated background color */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    background: #b0b4be;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10; /* Keeps the sidebar on top of the content */
+}
+
+.sidebar h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.sidebar button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    background: #6c7a99;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+
+.sidebar button:hover {
+    background-color: #5a687f;
+}
+
+.content {
+    margin-left: 290px; /* Space for the sidebar */
+    padding: 20px;
+    max-width: 700px; /* Limit width of the form content */
+    margin-top: 20px;
+    background-color: #f0f4f8; /* Same background color as body */
+    border-radius: 10px;
+    width: calc(100% - 270px); /* Take up remaining space excluding the sidebar width */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left; /* This will center the content horizontally */
+}
+
+
+/* Title Styles */
+.content h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%; /* Take up full width of the content */
+    max-width: 600px; /* Limit form width */
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.input-group textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+button {
+    background-color: #6c7a99;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #5a687f;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .content {
+        margin-left: 220px; /* Adjust to avoid sidebar */
+        width: calc(100% - 220px);
+    }
+
+    .input-group input,
+    .input-group select,
+    .input-group textarea {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 12px;
+    }
+}

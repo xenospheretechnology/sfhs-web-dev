@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="css/signIn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+          <a href="index.html">
+            <img src="assets/logo.webp" alt="Logo Click" width="100">
+        </a>
+        </div>
+        <div class="navbar-right">
+          <a href="#employee-login">Employee Login</a>
+          <a href="signIn.html">Login</a>
+          <a href="signUp.html" class="cta-button">Get Started</a>
+        </div>
+      </nav>
+    <div class="container" id="signIn">
+        <h1 class="form-title">Sign In</h1>
+        <form>
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="Email" name="email" id="email" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Password" name="password" id="password" required>
+            </div>
+            <input type="submit" class="btn" value="Sign In" name="sign-in">
+        </form>
+        <p class="or">
+            -------------- OR --------------
+        </p>
+        <div class="links">
+            <p>Don't have an account? <a href="signUp.html">Sign Up</a></p>
+        </div>
+    </div>
+    <script src="js/signIn.js" type="module"></script>
+</body>
+</html>

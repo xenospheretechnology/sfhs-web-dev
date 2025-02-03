@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Now</title>
+    <link rel="stylesheet" href="css/apply.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="signup">
+        <h1 class="form-title">Apply Now!</h1>
+        <form id="applyForm">
+            <div class="input-group">
+                <i class="fas fa-users"></i>
+                <select name="job" title="select job" id="job">
+                    <option id="jobListing" value="" disabled selected>Job Listing</option>
+                </select>
+            </div>
+            <div id="company-name"></div>
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="First Name" name="fName" id="fName" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Middle Initial" name="mInitial" id="mInitial">
+            </div>
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Last Name" name="lName" id="lName" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-phone"></i>
+                <input type="tel" placeholder="Phone Number" name="pNumber" id="pNumber" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-home"></i>
+                <input type="text" placeholder="Street Address" name="address" id="address" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-city"></i>
+                <input type="text" placeholder="City" name="city" id="city" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-flag"></i>
+                <input type="text" placeholder="State" name="state" id="state" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-mail-bulk"></i>
+                <input type="text" placeholder="Zip" name="zip" id="zip" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-calendar"></i>
+                <input type="text" placeholder="MM/DD/YYYY" name="dob" id="dob" required>
+            </div>
+            <div class="input-group">
+                <textarea placeholder="Is there anything else you would like to tell us?" name="extraInfo" id="extraInfo"></textarea>
+            </div>
+            <input type="submit" class="btn" value="Submit" name="apply">
+        </form>
+        <p class="note">Your employer will contact you with the next steps.</p>
+    </div>
+<script type ="module"src="js/apply.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const form = document.getElementById("applyForm");
+
+            form.addEventListener("submit", (event) => {
+                event.preventDefault(); // Prevent the default form submission behavior
+
+                // Display the thank-you message
+                alert("Thank you for your submission. We will get back to you once we review it.");
+
+                // Reset the form
+                
+            });
+        });
+    </script>
+</body>
+</html>

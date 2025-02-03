@@ -1,0 +1,170 @@
+body {
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    background-color: #f0f4f8;
+}
+
+.sidebar {
+    width: 250px;
+    background: #b0b4be;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10; /* Keeps the sidebar on top of the content */
+}
+
+.sidebar h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.sidebar button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    background: #6c7a99;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sidebar button:hover {
+    background-color: #5a687f;
+}
+
+.content {
+    margin-left: 290px; /* Space for the sidebar */
+    padding: 20px;
+    max-width: 900px; /* Limit width of the form content */
+    margin-top: 20px;
+    background-color: #f0f4f8; /* Same background color as body */
+    border-radius: 10px;
+    width: calc(100% - 270px); /* Take up remaining space excluding the sidebar width */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left; /* This will center the content horizontally */
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#searchBar {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.job-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.job-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-10px);
+}
+
+.job-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.company-name {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.job-location {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.job-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.job-type,
+.location-type {
+    font-size: 14px;
+    color: #6c7a99;
+    padding: 5px 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+.salary-range {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.apply-btn {
+    padding: 10px 15px;
+    background-color: #6c7a99;
+    border-color: #6c7a99;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    border-width: 1.25px 1.25px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+    background-color: #8091b7;
+}
+.interest-btn {
+    padding: 10px 15px;
+    border-color: #6c7a99;
+    background-color: #b2bdd3;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    border-width: 1.25px 1.25px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+.interest-btn:hover {
+    background-color: #8091b7;
+}

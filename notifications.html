@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications</title>
+    <link rel="stylesheet" href="css/notifications.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="notifications-container">
+        <div class="notifications-header">NOTIFICATIONS</div>
+
+        <!-- Container for dynamic notification cards -->
+        <div id="notifications-grid" class="notifications-grid">
+            <!-- Placeholder for JavaScript to populate 12 dynamic notification cards -->
+        </div>
+
+        <!-- Pagination controls -->
+        <div class="pagination-buttons">
+            <button id="prev-page" disabled>Previous</button>
+            <button id="next-page">Next</button>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyCvQX0WytJufg3eB3mNvPqhiWdzIOgfbr8",
+            authDomain: "sfhs-jobs.firebaseapp.com",
+            projectId: "sfhs-jobs",
+            storageBucket: "sfhs-jobs.firebasestorage.app",
+            messagingSenderId: "821032658591",
+            appId: "1:821032658591:web:20fda9afe6e99245b124aa",
+            measurementId: "G-RJX04MSCKW"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const notificationsGrid = document.getElementById("notifications-grid");
+
+            // Sample notification data for demonstration; replace this with dynamic Firestore data
+            const applications = Array(12).fill({
+                userName: "John Snow",
+                jobInfo: "Bob's Burgers",
+                jobTitle: "Cashier"
+            });
+
+            // Function to create a notification card
+            const createNotificationCard = ({ userName, jobInfo, jobTitle }) => {
+                return `
+                    <div class="notification-card">
+                        <button class="close-button"></button>
+                        <div class="user-name">${userName}</div>
+                        <div class="job-info">${jobInfo}<br><span class="job-title">${jobTitle}</span></div>
+                        <div class="action-buttons">
+                            <button class="email-button">Email</button>
+                            <button class="view-button">View</button>
+                        </div>
+                    </div>
+                `;
+            };
+
+            // Render 12 notifications in the grid
+            applications.forEach(application => {
+                notificationsGrid.innerHTML += createNotificationCard(application);
+            });
+
+            // Handle pagination or other interactions if needed
+        });
+    </script>
+</body>
+</html>

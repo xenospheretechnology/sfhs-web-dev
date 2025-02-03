@@ -1,0 +1,150 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+h1.form-title {
+    color: royalblue;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 20rem;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: silver;
+    font-size: 14px;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-group select {
+    cursor: pointer;
+}
+
+.input-group input:focus, .input-group select:focus {
+    border-color: royalblue;
+}
+
+.btn {
+    background-color: royalblue;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #003d99;
+}
+
+.or {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin: 20px 0;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.icons i {
+    font-size: 20px;
+    color: royalblue;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.icons i:hover {
+    color: #003d99;
+}
+
+.links {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.links a {
+    color: royalblue;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #003d99;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 15px;
+    }
+
+    .input-group input, .input-group select {
+        font-size: 16px;
+        padding: 12px 10px 12px 35px;
+    }
+
+    .btn {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    h1.form-title {
+        font-size: 20px;
+    }
+}

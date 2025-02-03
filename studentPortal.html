@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="css/studentPortal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Welcome, <br><strong>Student</strong></h2>
+        <button onclick="window.location.href='studentPortal.html'">Home</button>
+        <button onclick="window.location.href='apply.html'">Apply</button>
+        <button onclick="window.location.href='viewJobs.html'">View Job Listings</button>
+        <button onclick="window.location.href='myApplications.html'">My Applications</button>
+        <button onclick="window.location.href='interestedJobs.html'">Interested Jobs</button>
+        <button onclick="window.location.href='signIn.html'">Log out</button>
+    </div>
+    <div class="content">
+        <!-- Latest Job Postings Section -->
+        <div class="latest-job-postings">
+            <h2>Home</h2>
+        </div>
+
+        <!-- My Applications Section (Optional) -->
+        <div class="my-applications">
+            <h2>My Latest Application</h2>
+            <!-- This will display jobs student has applied to, or show "No Applications" if none -->
+            <div id="myApplications">
+                <p>No applications yet.</p>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js"></script>
+    <script type="module" src="js/adminPortal.js"></script>
+</body>
+</html>

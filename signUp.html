@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/signIn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+          <a href="index.html">
+            <img src="assets/logo.webp" alt="Logo Click" width="100">
+        </a>
+        </div>
+        <div class="navbar-right">
+          <a href="#employee-login">Employee Login</a>
+          <a href="signIn.html">Login</a>
+          <a href="signUp.html" class="cta-button">Get Started</a>
+        </div>
+      </nav>
+    <div class="container" id="signup">
+        <h1 class="form-title">Sign Up</h1>
+        <form>
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="First Name" name="fName" id="fName" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Last Name" name="lName" id="lName" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-phone"></i>
+                <input type="tel" placeholder="Phone Number" name="pNumber" id="pNumber" required>
+            </div>
+            <div class="input-group">
+                <select name="role" title="select role" id="role">
+                    <option value="" disabled selected>Select Role</option>  <!-- Placeholder option -->
+                    <option value="admin">Admin</option>
+                    <option value="employer">Employer</option>
+                    <option value="student">Student</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="Email" name="email" id="email" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Password" name="password" id="password" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Confirm Password" name="cPassword" id="cPassword" required>
+            </div>
+            <input type="submit" class="btn" value="Sign Up" name="sign-up">
+        </form>
+        <p class="or">
+            -------------- OR --------------
+        </p>
+        <div class="links">
+            <p>Already have an account? <a href="signIn.html">Sign In</a></p>
+        </div>
+    </div>
+    <script src="signUp.js" type="module"></script>
+</body>
+</html>

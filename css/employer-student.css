@@ -1,0 +1,87 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .chat-container {
+    max-width: 600px;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chat-header {
+    background-color: #0078d4;
+    color: #ffffff;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .message-list {
+    padding: 1em;
+    height: 300px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .message {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    max-width: 75%;
+  }
+  
+  .employer-message {
+    background-color: #0078d4;
+    color: #ffffff;
+    align-self: flex-end;
+  }
+  
+  .student-message {
+    background-color: #e1e1e1;
+    color: #333;
+    align-self: flex-start;
+  }
+  
+  .message-form {
+    display: flex;
+    padding: 1em;
+    gap: 0.5em;
+  }
+  
+  .message-input {
+    flex: 1;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .send-button {
+    background-color: #0078d4;
+    color: #ffffff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .send-button:hover {
+    background-color: #005fa2;
+  }
+  

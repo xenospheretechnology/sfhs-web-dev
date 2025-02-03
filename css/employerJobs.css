@@ -1,0 +1,160 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    background-color: #2C3E50;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sidebar button {
+    background-color: #34495E;
+    border: none;
+    color: white;
+    padding: 12px;
+    margin-bottom: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar button:hover {
+    background-color: #1ABC9C;
+}
+
+/* Main Content Styles */
+.content {
+    flex-grow: 1;
+    background-color: #ECF0F1;
+    padding: 30px;
+    overflow-y: scroll;
+    height: 100%;
+    width: calc(100% - 250px);
+}
+
+.content h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2C3E50;
+}
+
+.job-listings {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.job-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.job-card:hover {
+    transform: scale(1.05);
+}
+
+.job-card h3 {
+    font-size: 22px;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+
+.job-card p {
+    font-size: 16px;
+    color: #7F8C8D;
+    margin-bottom: 10px;
+}
+
+.job-card button {
+    background-color: #2980B9;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.job-card button:hover {
+    background-color: #3498DB;
+}
+
+/* Modal for Applicants */
+.applicant-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 80%;
+    z-index: 10;
+}
+
+.applicant-modal h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.applicant-card {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.applicant-card p {
+    font-size: 16px;
+    color: #34495E;
+}
+
+.applicant-card button {
+    margin-left: 10px;
+    background-color: #1ABC9C;
+    font-size: 14px;
+}
+
+.applicant-card button:hover {
+    background-color: #16A085;
+}
+
+button.close-modal {
+    background-color: #E74C3C;
+    margin-top: 20px;
+}
+
+button.close-modal:hover {
+    background-color: #C0392B;
+}

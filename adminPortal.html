@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal</title>
+    <link rel="stylesheet" href="css/adminPortal.css">
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js"></script>
+    <script type="module" src="adminPortal.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Welcome, <br><strong>Admin</strong></h2>
+        <button onclick="window.location.href='adminPortal.html'">Manage Job Postings</button>
+        <button onclick="window.location.href='allUsers.html'">Manage Users</button>
+        <button onclick="window.location.href='signIn.html'">Log out</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Pending Job Postings</h1>
+        <div id="jobList" class="job-listings"></div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js"></script>
+    <script type="module" src="js/adminPortal.js"></script>
+</body>
+</html>

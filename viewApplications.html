@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employer Dashboard</title>
+    <link rel="stylesheet" href="css/employerPortal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Welcome, <br><strong><script>document</script></strong></h2>
+        <button onclick="window.location.href='employerPortal.html'">Home</button>
+        <button onclick="window.location.href='postJob.html'">Post a job</button>
+        <button onclick="window.location.href='viewApplications.html'">View all applications</button>
+        <button onclick="window.location.href='signIn.html'">Log out</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>View All Applications</h1>
+
+
+        <!-- Recent Applications -->
+        <div class="recent-applications">
+            <div id="recentApplication"></div>
+        </div>
+    </div>
+    <!-- Application Details Modal -->
+<div id="applicationModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Application Details</h2>
+        <div id="applicationDetails"></div>
+    </div>
+</div>
+
+<!-- Modal Styling -->
+<style>
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-content {
+        background-color: #fff;
+        margin: 10% auto;
+        padding: 20px;
+        width: 50%;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+</style>
+
+
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js"></script>
+    <script type="module" src="js/viewApplications.js"></script>
+</body>
+</html>

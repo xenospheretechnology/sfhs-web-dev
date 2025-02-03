@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employer Dashboard</title>
+    <link rel="stylesheet" href="css/employerPortal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Welcome, <br><strong><script>document</script></strong></h2>
+        <button onclick="window.location.href='employerPortal.html'">Home</button>
+        <button onclick="window.location.href='postJob.html'">Post a job</button>
+        <button onclick="window.location.href='viewApplications.html'">View all applications</button>
+        <button onclick="window.location.href='signIn.html'">Log out</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Dashboard</h1>
+
+        <!-- Recent Jobs -->
+        <div class="recent-jobs">
+            <h2>Recent Job Postings</h2>
+            <div id="recentJobsList"></div>
+        </div>
+
+        <!-- Recent Applications -->
+        <div class="recent-applications">
+            <h2>Recent Application</h2>
+            <div id="recentApplication"></div>
+        </div>
+    </div>
+
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js"></script>
+    <script type="module" src="js/employerPortal.js"></script>
+</body>
+</html>

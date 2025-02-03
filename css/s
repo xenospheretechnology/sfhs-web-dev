@@ -1,0 +1,24 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+  }
+  
+  .navbar a {
+    color: #333;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Subtle hover background */
+    color: #ffffff; /* Keep text white */
+    border-radius: 8px;
+  }

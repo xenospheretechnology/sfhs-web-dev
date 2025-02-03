@@ -1,0 +1,189 @@
+body {
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+/* Navbar Styles */
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;  /* Adjust the padding value to control the height */
+  background: #222;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1001;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+.navbar-left .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-left .logo span {
+  color: #00c896;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-right a {
+  color: #fefbfb;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s ease-in-out;
+  border-radius: 8px;
+}
+
+.navbar-right a:hover, .cta-button {
+  background-color: #00c896;
+  color: #fff;
+}
+
+.cta-button {
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+/* Banner Styles */
+.banner {
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/School.webp');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding-top: 80px;
+}
+
+.content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #009688;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  transition: color 0.4s ease-in-out, border 0.4s ease-in-out;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #009688;
+  transition: width 0.4s ease-in-out;
+  z-index: -1;
+}
+
+button:hover::before {
+  width: 100%;
+}
+
+button:hover {
+  color: #fff;
+  border-color: #00796b;
+}
+
+
+/* Internship Section */
+.internship-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  max-width: 1200px;
+  margin: auto;
+  gap: 50px;
+}
+
+.internship-image img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.internship-text {
+  max-width: 600px;
+}
+
+/* Stats Section */
+.stats-section {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  text-align: center;
+  background: #fff;
+  padding: 50px;
+  margin: 50px auto;
+  max-width: 1000px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stats-box {
+  background: #00c896;
+  color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  width: 200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 1rem;
+  margin-top: 50px;
+}
+
+.navbar-left .logo {
+  max-width: 150px; 
+  max-height: 75px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  padding-left: 30px ;
+}
+.btn-secondary {
+  color: black;
+}

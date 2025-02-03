@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interested Jobs</title>
+    <link rel="stylesheet" href="css/interestedJobs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Firebase SDKs -->
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js"></script>
+    
+    <!-- Your JS File -->
+    <script type="module" src="js/interestedJobs.js" defer></script>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Welcome, <br><strong>Student</strong></h2>
+        <button onclick="window.location.href='studentPortal.html'">Home</button>
+        <button onclick="window.location.href='apply.html'">Apply</button>
+        <button onclick="window.location.href='viewJobs.html'">View Job Listings</button>
+        <button onclick="window.location.href='myApplications.html'">My Applications</button>
+        <button onclick="window.location.href='interestedJobs.html'">Interested Jobs</button>
+        <button onclick="window.location.href='signIn.html'">Log out</button>
+    </div>
+
+    <div class="content">
+        <h1>Interested Jobs</h1>
+        <section id="interestedJobs" class="job-list">
+            <p>Loading your interested jobs...</p>
+        </section>
+    </div>
+</body>
+</html>
