@@ -6,7 +6,6 @@
     <title>Apply Now</title>
     <link rel="stylesheet" href="css/apply.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container" id="signup">
@@ -30,6 +29,10 @@
             <div class="input-group">
                 <i class="fas fa-user"></i>
                 <input type="text" placeholder="Last Name" name="lName" id="lName" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="Email Address" name="email" id="email" required>
             </div>
             <div class="input-group">
                 <i class="fas fa-phone"></i>
@@ -62,7 +65,7 @@
         </form>
         <p class="note">Your employer will contact you with the next steps.</p>
     </div>
-<script type ="module"src="js/apply.js"></script>
+<script type ="module"src="apply.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const form = document.getElementById("applyForm");
