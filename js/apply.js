@@ -107,6 +107,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
             alert("Application submitted successfully!");
             location.reload(); // Reload the page after submission
+            location.href = "studentPortal.html" // Reload the page after submission
         } catch (error) {
             console.error("Error submitting application:", error);
             alert("Failed to submit application. Please try again.");
